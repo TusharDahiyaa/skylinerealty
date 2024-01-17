@@ -1,0 +1,450 @@
+html,
+body {
+  background-color: #eeeeee;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Roboto", sans-serif, "Zen Maru Gothic", serif, "Times New Roman",
+    Georgia, Times, serif, "Cinzel Decorative", serif, "Quintessential", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  font-family: "Zen Maru Gothic", serif;
+  background: transparent !important;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  padding: 0px auto;
+}
+
+.navbar-brand {
+  filter: invert(100%);
+  transition: 0.2s ease;
+  transform: scale(1);
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+  filter: brightness(150%) invert(100%);
+}
+
+.nav-link {
+  color: white !important;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+}
+
+.nav-link::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar-toggler {
+  border: 1px solid white !important;
+}
+
+header {
+  height: auto;
+  color: #faf0e6;
+  text-align: center;
+}
+
+.header-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+    url("../images/header-bg.jpg");
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-size: cover;
+  backdrop-filter: opacity(30%);
+}
+
+.header-container hr {
+  width: 40%;
+  border: 3px white solid;
+  opacity: 100%;
+  margin: auto;
+  align-items: center;
+}
+
+#logo-img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  filter: invert(98%) sepia(2%) saturate(7067%) hue-rotate(298deg)
+    brightness(112%) contrast(103%);
+}
+
+.header-container h1 {
+  font-family: "Cinzel Decorative", serif;
+  justify-content: center;
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.header-container p {
+  width: 40%;
+  font-size: 1rem;
+  font-style: oblique;
+  text-align: center;
+  position: relative;
+  left: 30%;
+  margin-top: 1%;
+}
+
+.hover-rotate {
+  color: navy;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.header-btn .hover-rotate {
+  transition: transform 0.4s;
+}
+
+.header-btn:hover .hover-rotate {
+  transform: rotate(90deg);
+}
+
+.header-btn {
+  background-color: white;
+  margin-bottom: 25vmin;
+}
+
+.header-btn:hover {
+  background-color: lightskyblue;
+  transition: 0.4s ease-in-out;
+}
+
+.header-container a {
+  color: navy;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px whitesmoke;
+  cursor: pointer;
+}
+
+#hareraTag {
+  text-shadow: none;
+}
+
+.header-container a:hover {
+  color: darkblue;
+  transition: 0.5s ease-in-out;
+}
+
+/* BUYER SELLER */
+.BuyerAndSeller h3 {
+  text-align: center;
+  padding: 10px;
+  font-family: "Cinzel Decorative", serif;
+}
+.selectBuyerSeller {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buyer {
+  background: #eeeeee;
+  height: auto;
+  width: 50%;
+  float: left;
+  text-align: center;
+  border: 5px double #072541;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  margin-right: 2px;
+}
+.seller {
+  background-color: #eeeeee;
+  width: 50%;
+  float: right;
+  height: auto;
+  text-align: center;
+  border: 5px double #072541;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  margin-left: -2px;
+}
+
+.selectBuyerSeller .btn {
+  font-family: "Zen Maru Gothic", serif;
+  position: relative;
+  top: 20%;
+  border: 5px solid #072541;
+  background-color: #072541;
+  color: white;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+  font-size: 24px;
+  width: 250px;
+  height: 250px;
+  margin: 180px 100px;
+}
+
+.buyer .btn {
+  border-radius: 10px;
+}
+
+.seller:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../images/BuyerSeller.jpg");
+  background-size: cover;
+}
+
+.buyer:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../images/BuyerSeller.jpg");
+  background-size: cover;
+}
+.seller:hover .btn {
+  background-color: #eeeeee;
+  color: black;
+  border-color: white;
+  border-radius: 20px;
+}
+
+.buyer:hover .btn {
+  background-color: #eeeeee;
+  color: black;
+  border-color: white;
+  border-radius: 50%;
+}
+
+/*********************** SIGN UP **************************/
+#signUp input {
+  font-size: 18px;
+  margin: 0;
+  border-radius: 0;
+}
+
+#signUp h3 {
+  text-align: center;
+  padding: 20px;
+  background-color: #072541;
+  color: white;
+}
+
+#userMessage {
+  margin-top: 30px;
+  font-size: 18px;
+  border-radius: 0;
+}
+
+#submitBtn {
+  margin-top: -80px;
+  background-color: black;
+  border-color: black;
+  border-radius: 0;
+  transition: 0.3s ease-in-out;
+  transform: translateY(0deg);
+}
+
+#submitBtn:hover {
+  background-color: #072541;
+  border-color: #072541;
+  transform: translateY(-20deg);
+}
+/*************************CONTACT*****************************/
+#contact {
+  text-align: center;
+}
+
+#contact h3 {
+  margin: auto;
+}
+
+.inline-contact {
+  display: inline-block;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+#contact a {
+  text-decoration: none;
+  transition: 0.2s ease-out;
+  color: #c70039;
+}
+
+#contact a:hover {
+  padding: 5px;
+  color: white;
+  background-color: #c70039;
+  border: 2px solid #c70039;
+  border-radius: 10px;
+}
+
+/*************************FOOTER*******************************/
+.footer {
+  text-align: center;
+}
+
+/*************************** DIFFERENT DEVICES STYLING **********************************/
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  header {
+    height: 80vmin;
+  }
+
+  .header-container h1 {
+    top: 0px;
+    left: 20px;
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+
+  .header-container p {
+    width: 60%;
+    margin: 20px auto;
+    left: 0;
+    z-index: 2;
+    font-size: 1rem;
+  }
+
+  .header-btn {
+    left: 20px;
+    bottom: 225px;
+  }
+
+  .selectBuyerSeller .btn {
+    font-weight: 500;
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+    margin: 40% 25%;
+  }
+
+  #signUp h3 {
+    font-size: 24px;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  header {
+    height: 60vh;
+  }
+
+  #logo-img {
+    width: 25%;
+    height: 25%;
+    top: 10%;
+    left: 0;
+  }
+  .header-container h1 {
+    top: 0px;
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .header-container p {
+    width: 90%;
+    margin: 20px auto;
+    left: 0;
+    z-index: 2;
+    font-size: 0.88rem;
+  }
+
+  .header-btn {
+    width: 60%;
+    margin: 20px;
+    left: 0;
+    bottom: -150px;
+    z-index: 2;
+    font-size: 0.7rem;
+  }
+
+  .header-container hr {
+    width: 60%;
+    border: 3px white solid;
+    opacity: 100%;
+    margin: 10px auto 0;
+    align-items: center;
+  }
+
+  .BuyerAndSeller h3 {
+    font-size: 1rem;
+  }
+
+  .selectBuyerSeller .btn {
+    font-weight: 500;
+    font-size: 16px;
+    width: 100px;
+    height: 100px;
+    margin: 40% 25%;
+  }
+
+  #signUp h3 {
+    font-size: 20px;
+  }
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 768px) and (orientation: landscape) {
+  header {
+    height: 100vh;
+  }
+
+  #logo-img {
+    width: 15%;
+    height: 15%;
+    top: 10%;
+    left: 0;
+  }
+  .header-container h1 {
+    top: 0px;
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .header-container p {
+    width: 80%;
+    margin: 1% auto;
+    left: 0;
+    z-index: 2;
+    font-size: 0.8rem;
+  }
+
+  .header-btn {
+    width: 40%;
+    margin: 20px;
+    left: 0;
+    bottom: -100px;
+    z-index: 2;
+    font-size: 0.8rem;
+  }
+
+  .header-container hr {
+    width: 35%;
+  }
+
+  .selectBuyerSeller .btn {
+    font-weight: 500;
+    font-size: 16px;
+    width: 100px;
+    height: 100px;
+    margin: 40% 10%;
+  }
+
+  #signUp h3 {
+    font-size: 20px;
+  }
+}

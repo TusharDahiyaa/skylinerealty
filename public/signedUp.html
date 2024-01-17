@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/trace.svg" />
+    <title>Skyline Realty</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&Cinzel+Decorative:wght@400;700;900&family=Quintessential&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #signUp {
+        font-size: 1.2rem;
+        margin-bottom: 10%;
+      }
+
+      .header-bg {
+        height: auto;
+      }
+
+      .header-bg p {
+        font-size: 1.5rem;
+        padding-bottom: 5%;
+      }
+
+      #signUp p {
+        text-align: center;
+      }
+
+      @media screen and (max-device-width: 480px) and (orientation: portrait) {
+        .header-bg {
+          height: 60vh;
+        }
+
+        .header-bg p {
+          font-size: 1.2rem;
+          padding-bottom: 1%;
+        }
+
+        #signUp p {
+          font-size: 1rem;
+        }
+      }
+    </style>
+    <script>
+      setTimeout(function () {
+        // After 10 seconds, redirect to the homepage
+        window.location.href = "/";
+      }, 10000);
+    </script>
+  </head>
+  <body>
+    <div class="header-bg">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"
+            ><img
+              src="./images/SkylineRealtyNav.png"
+              alt="Logo"
+              width="50"
+              height="50"
+              class="d-inline-block align-text-top"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" href="/about">About</a>
+              <a class="nav-link" href="/listings">Listings</a>
+              <a class="nav-link" href="/buyer">Buyer</a>
+              <a class="nav-link" href="/seller">Seller</a>
+              <a class="nav-link" href="#signUp">Sign Up</a>
+              <a class="nav-link" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container-main">
+        <header>
+          <div class="header-container">
+            <img
+              id="logo-img"
+              src="./images/SkylineRealtyLogo.png"
+              alt="Logo"
+            />
+            <h1>Skyline Realty</h1>
+            <h6>
+              <a
+                id="hareraTag"
+                href="/about"
+                class="text-decoration-none text-white fs2-text"
+                >(HARERA Certified)</a
+              >
+            </h6>
+            <hr />
+            <p>Thank you for contacting us. We will get back to you shortly.</p>
+          </div>
+        </header>
+      </div>
+    </div>
+    <section>
+      <div id="signUp">
+        <p>
+          This page will automatically redirect to homepage in 10 seconds...
+        </p>
+      </div>
+      <div id="contact">
+        <h3>Ok, let's do this!</h3>
+        <p class="inline-contact">
+          <a href="mailto: helloskylinerealty@gmail.com"
+            ><i class="fa-solid fa-envelope"></i> Email
+          </a>
+        </p>
+        <p class="inline-contact">
+          <a
+            href="https://www.facebook.com/people/Skyline-Realty/61550352837949/"
+            ><i class="fa-brands fa-facebook-f"></i> Facebook</a
+          >
+        </p>
+        <p class="inline-contact">
+          <a href="https://www.instagram.com/skylinerealtyhub/"
+            ><i class="fa-brands fa-instagram"></i> Instagram</a
+          >
+        </p>
+        <p class="inline-contact">
+          <a href="https://www.youtube.com/channel/UCQgy9iwf0rjdeTyNN28YaVw"
+            ><i class="fa-brands fa-youtube"></i> YouTube</a
+          >
+        </p>
+      </div>
+    </section>
+    <footer class="footer">
+      <p><small>&copy; 2023 Skyline Realty</small></p>
+    </footer>
+    <script src="../index.js" />
+  </body>
+</html>

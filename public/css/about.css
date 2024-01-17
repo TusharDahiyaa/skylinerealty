@@ -1,0 +1,589 @@
+html,
+body {
+  background-color: #f9f9f9;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Roboto", sans-serif, "Zen Maru Gothic", serif, "Times New Roman",
+    Georgia, Times, serif, "Cinzel Decorative", serif, "Quintessential", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  font-family: "Zen Maru Gothic", serif;
+  background: transparent !important;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  padding: 0px auto;
+  margin: 0px;
+}
+
+.navbar-brand {
+  filter: invert(100%);
+  transition: 0.2s ease;
+  transform: scale(1);
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+  filter: brightness(150%) invert(100%);
+}
+
+.nav-link {
+  color: white !important;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+}
+
+.nav-link::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar-toggler {
+  border: 1px solid white !important;
+}
+
+header {
+  height: auto;
+  color: #faf0e6;
+  text-align: center;
+}
+
+.header-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+    url("../images/header-bg.jpg");
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-size: cover;
+  backdrop-filter: opacity(30%);
+}
+
+.header-container hr {
+  width: 30%;
+  border: 3px white solid;
+  opacity: 100%;
+  margin: auto;
+  align-items: center;
+}
+
+#logo-img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  filter: invert(98%) sepia(2%) saturate(7067%) hue-rotate(298deg)
+    brightness(112%) contrast(103%);
+}
+
+.header-container h1 {
+  font-family: "Cinzel Decorative", serif;
+  justify-content: center;
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.header-container h3 {
+  width: 40%;
+  font-size: 2rem;
+  font-style: oblique;
+  text-align: center;
+  position: relative;
+  left: 30%;
+  padding: 30px 0 10vh 0;
+}
+
+.header-container a {
+  color: navy;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px whitesmoke;
+  cursor: pointer;
+}
+
+.header-container a:hover {
+  color: darkblue;
+  transition: 0.5s ease-in-out;
+}
+
+/* ABOUT */
+.about-section {
+  font-family: "Zen Maru Gothic", serif;
+}
+
+#heading-title,
+#realtor-title,
+#harera-title {
+  text-align: center;
+  font-family: "Cinzel Decorative", serif;
+}
+
+.reraCert {
+  border: 10px double darkslategray;
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+#firstAbout {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em 0;
+}
+
+#firstAbout img {
+  margin: 0 30px;
+  border-radius: 20px;
+}
+
+#inside-firstAbout {
+  display: block;
+}
+
+#firstAbout p {
+  width: 95%;
+  font-size: 24px;
+  text-align: justify;
+}
+#firstAbout h3 {
+  margin-top: 2em;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 2rem;
+}
+
+#secondAbout {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em 0;
+}
+
+#secondAbout img {
+  order: 2;
+  margin: 0 30px;
+  border-radius: 20px;
+}
+
+#inside-secondAbout {
+  order: 1;
+  display: block;
+  margin-left: 20px;
+}
+
+#secondAbout p {
+  width: 95%;
+  font-size: 24px;
+  text-align: justify;
+}
+#secondAbout h3 {
+  margin-top: 2rem;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 2rem;
+}
+
+#thirdAbout {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em 0;
+}
+
+#thirdAbout img {
+  margin: 0 30px;
+  border-radius: 20px;
+}
+
+#inside-thirdAbout {
+  display: block;
+}
+
+#thirdAbout p {
+  width: 95%;
+  font-size: 24px;
+  text-align: justify;
+}
+#thirdAbout h3 {
+  margin-top: 2rem;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 2rem;
+}
+
+#finalAbout {
+  font-family: "Cinzel Decorative", serif;
+  background-color: #dafffb;
+  text-align: center;
+  width: auto;
+  margin: 2rem auto;
+  padding: 1rem 6rem;
+  font-size: 24px;
+}
+
+/* CONTACT */
+#contact {
+  text-align: center;
+}
+
+#contact h3 {
+  margin: auto;
+}
+
+.inline-contact {
+  display: inline-block;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+#contact a {
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  color: crimson;
+}
+
+#contact a:hover {
+  padding: 5px;
+  color: white;
+  background-color: crimson;
+  border: 2px solid crimson;
+  border-radius: 10px;
+}
+
+/*************************FOOTER*******************************/
+.footer {
+  text-align: center;
+}
+
+/*************************** DIFFERENT DEVICES STYLING **********************************/
+
+/* For Tablet View */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: 60vmin;
+  }
+
+  .header-container h1 {
+    top: 0px;
+    left: 20px;
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+
+  .header-container p {
+    width: 60%;
+    margin: 20px auto;
+    left: 0;
+    z-index: 2;
+    font-size: 1rem;
+  }
+
+  .header-btn {
+    left: 20px;
+    bottom: 225px;
+  }
+
+  #firstAbout {
+    display: flex;
+  }
+
+  #firstAbout img {
+    margin: 0 2%;
+    border-radius: 20px;
+  }
+
+  #firstAbout p {
+    width: 100%;
+    font-size: 20px;
+    padding: 1% 3%;
+  }
+
+  #firstAbout h3 {
+    margin: 2rem 0.8rem 0;
+    font-size: 1.8rem;
+  }
+
+  #secondAbout {
+    display: flex;
+  }
+
+  #inside-secondAbout {
+    margin-left: 2%;
+    width: 100%;
+  }
+
+  #secondAbout img {
+    float: right;
+    margin: 0 2% 20px 2%;
+    border-radius: 20px;
+  }
+
+  #secondAbout p {
+    /* width: 100%; */
+    font-size: 20px;
+    padding: 1% 0;
+  }
+
+  #secondAbout h3 {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+  }
+
+  #thirdAbout {
+    display: flex;
+  }
+
+  #thirdAbout img {
+    margin: 0 30px;
+    border-radius: 20px;
+  }
+
+  #inside-thirdAbout {
+    display: block;
+  }
+
+  #thirdAbout p {
+    width: 100%;
+    font-size: 20px;
+    padding: 1% 0;
+  }
+  #thirdAbout h3 {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+  }
+
+  #finalAbout {
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  header {
+    height: auto;
+  }
+
+  #logo-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .header-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .about-section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .header-btn {
+    left: 20px;
+    bottom: 225px;
+  }
+
+  .about-section img {
+    width: 200px;
+    height: 350px;
+  }
+
+  #reraCert {
+    height: auto;
+    width: 90%;
+    margin: 5%;
+  }
+
+  .reraCert {
+    display: block;
+  }
+
+  #harera-title {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  #firstAbout {
+    display: block;
+  }
+
+  #firstAbout img {
+    float: left;
+    margin: 0 2%;
+    border-radius: 20px;
+  }
+
+  #firstAbout p {
+    width: 100%;
+    font-size: 18px;
+    padding: 2% 3%;
+  }
+
+  #firstAbout h3 {
+    margin: 2rem 0.6rem 0;
+    font-size: 1.5rem;
+  }
+
+  #secondAbout {
+    display: block;
+    overflow: hidden;
+  }
+
+  #secondAbout img {
+    float: right;
+    margin: 0 1% 1%;
+  }
+
+  #secondAbout p {
+    font-size: 18px;
+    padding: 1% 0;
+  }
+
+  #secondAbout h3 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  #thirdAbout {
+    display: block;
+  }
+
+  #thirdAbout img {
+    float: left;
+    margin: 0 1%;
+    border-radius: 20px;
+  }
+
+  #inside-thirdAbout {
+    display: block;
+  }
+
+  #thirdAbout p {
+    width: 100%;
+    font-size: 18px;
+    padding: 1% 2%;
+  }
+  #thirdAbout h3 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0 1rem 0 0.2rem;
+  }
+
+  #finalAbout {
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  header {
+    height: 80vmin;
+  }
+
+  #logo-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .header-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .header-btn {
+    left: 20px;
+    bottom: 225px;
+  }
+
+  .about-section img {
+    width: 200px;
+    height: 350px;
+  }
+
+  #firstAbout {
+    display: block;
+  }
+
+  #firstAbout img {
+    float: left;
+    margin: 0 2%;
+    border-radius: 20px;
+  }
+
+  #firstAbout p {
+    width: 100%;
+    font-size: 18px;
+    padding: 2% 3%;
+  }
+
+  #firstAbout h3 {
+    margin: 2rem 0.6rem 0;
+    font-size: 1.5rem;
+  }
+
+  #secondAbout {
+    display: block;
+    overflow: hidden;
+  }
+
+  #secondAbout img {
+    float: right;
+    margin: 0 1% 1%;
+  }
+
+  #secondAbout p {
+    font-size: 18px;
+    padding: 1% 0;
+  }
+
+  #secondAbout h3 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  #thirdAbout {
+    display: block;
+  }
+
+  #thirdAbout img {
+    float: left;
+    margin: 0 1%;
+    border-radius: 20px;
+  }
+
+  #inside-thirdAbout {
+    display: block;
+  }
+
+  #thirdAbout p {
+    width: 100%;
+    font-size: 18px;
+    padding: 1% 2%;
+  }
+  #thirdAbout h3 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0 1rem 0 0.2rem;
+  }
+
+  #finalAbout {
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+  }
+}

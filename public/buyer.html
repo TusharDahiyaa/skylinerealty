@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/trace.svg" />
+    <title>Skyline Realty</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/buyer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&Cinzel+Decorative:wght@400;700;900&family=Quintessential&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.scroll(function () {
+        console.log(window.scrollTop());
+        if (window.scrollTop() > 63) {
+          document.getElementsByTagName("nav").addClass("navbar-fixedd");
+        }
+        if (window.scrollTop() < 64) {
+          document.getElementsByClassName("nav").removeClass("navbar-fixedd");
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div class="header-bg">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark navbar-fixed bg-body-tertiary"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"
+            ><img
+              src="./images/SkylineRealtyNav.png"
+              alt="Logo"
+              width="50"
+              height="50"
+              class="d-inline-block align-text-top"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" href="/about">About</a>
+              <a class="nav-link" href="/listings">Listings</a>
+              <a class="nav-link" href="/buyer">Buyer</a>
+              <a class="nav-link" href="/seller">Seller</a>
+              <a class="nav-link" href="/#signUp">Sign Up</a>
+              <a class="nav-link" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container-main">
+        <header>
+          <div class="header-container">
+            <img
+              id="logo-img"
+              src="./images/SkylineRealtyLogo.png"
+              alt="Logo"
+            />
+            <h1>Skyline Realty</h1>
+            <h6>(HARERA Certified)</h6>
+            <hr />
+            <h3>Your Dream Home Awaits!</h3>
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <div id="buyer-title">
+      <h1>Welcome to Skyline Realty</h1>
+      <p>Your trusted partner in the real estate market.</p>
+    </div>
+    <div id="why-choose-us">
+      <h3>Why Choose Us?</h3>
+      <p>
+        At Skyline Realty, we understand that finding your dream home is one of
+        life's most significant decisions. Our dedicated team of real estate
+        experts is committed to making your buying journey a smooth and
+        rewarding experience. With years of experience in the real estate
+        industry, we offer a wide range of services tailored to help you find
+        the perfect property.
+      </p>
+      <ul>
+        <div id="first-choices">
+          <div>
+            <h3>
+              Expert Guidance
+              <hr />
+            </h3>
+            <p>
+              Our experienced real estate agents are here to guide you through
+              the buying process, answer your questions, and help you make
+              informed decisions.
+            </p>
+            <h3>
+              Extensive Property Listings
+              <hr />
+            </h3>
+            <p>
+              Explore a diverse range of property listings, including
+              residential homes, condos, land, and commercial spaces. We have
+              options to suit every budget and preference.
+            </p>
+            <h3>
+              Local Knowledge
+              <hr />
+            </h3>
+            <p>
+              We have in-depth knowledge of the local real estate market. This
+              insight allows us to provide you with valuable information about
+              neighborhoods, schools, and amenities.
+            </p>
+          </div>
+          <img
+            src="../public/images/workImg.jpg"
+            width="400"
+            height="550"
+            alt=""
+          />
+        </div>
+        <div id="second-choices">
+          <img
+            src="../public/images/image5.jpg"
+            width="400"
+            height="550"
+            alt=""
+          />
+          <div>
+            <h3>
+              Personalized Service
+              <hr />
+            </h3>
+            <p>
+              We understand that each buyer is unique. Our personalized service
+              ensures that we match you with properties that align with your
+              specific criteria and preferences.
+            </p>
+            <h3>
+              Smooth Transactions
+              <hr />
+            </h3>
+            <p>
+              Our team handles the paperwork, negotiations, and inspections,
+              making your real estate purchase hassle-free.
+            </p>
+            <h3>
+              Post-Purchase Support
+              <hr />
+            </h3>
+            <p>
+              Our commitment doesn't end at the closing table. We are here to
+              assist you with any post-purchase questions or support.
+            </p>
+          </div>
+        </div>
+      </ul>
+    </div>
+    <div id="the-buying-process">
+      <h2>Our Services</h2>
+      <ul>
+        <div id="third-choices">
+          <img
+            src="../public/images/image6.jpg"
+            width="350"
+            height="500"
+            alt="process-image"
+          />
+          <div>
+            <h3>
+              Home Buying
+              <hr />
+            </h3>
+            <p>
+              Whether you're a first-time homebuyer or a seasoned investor, we
+              can help you find the perfect property.
+            </p>
+            <h3>
+              Commercial Properties
+              <hr />
+            </h3>
+            <p>
+              Looking for office space or an investment property? We have a
+              variety of commercial real estate listings.
+            </p>
+            <h3>
+              Land and Development
+              <hr />
+            </h3>
+            <p>
+              If you're interested in land or property development, we can
+              assist you in identifying the right opportunities.
+            </p>
+          </div>
+        </div>
+      </ul>
+    </div>
+
+    <div id="get-started">
+      <h2>How to Get Started</h2>
+      <p>
+        <b>Browse Property Listings:</b><br />Explore our extensive list of
+        properties to find the one that fits your criteria.
+      </p>
+      <p>
+        <b>Schedule a Viewing:</b><br />Contact our team to arrange viewings of
+        the properties you're interested in.
+      </p>
+      <p>
+        <b>Make an Offer:</b><br />Once you've found your ideal property, we'll
+        guide you through the offer and negotiation process.
+      </p>
+      <p>
+        <b>Closing and Ownership:</b><br />We'll help you navigate the closing
+        process and hand you the keys to your new home.
+      </p>
+      <p>
+        <b>Post-Purchase Support:</b><br />Our team is here for any questions or
+        assistance you may need after you move in.
+      </p>
+    </div>
+    <div id="contact">
+      <h3>Check us out!</h3>
+      <br />
+      <p class="fw-semibold font-monospace">
+        <i class="fa-solid fa-phone"></i> 9560557002, 011 45680233
+      </p>
+      <p class="inline-contact">
+        <a href="mailto: helloskylinerealty@gmail.com"
+          ><i class="fa-solid fa-envelope"></i> Email
+        </a>
+      </p>
+      <p class="inline-contact">
+        <a href="https://www.facebook.com/people/Skyline-Realty/61550352837949/"
+          ><i class="fa-brands fa-facebook-f"></i> Facebook</a
+        >
+      </p>
+      <p class="inline-contact">
+        <a href="https://www.instagram.com/skylinerealtyhub/"
+          ><i class="fa-brands fa-instagram"></i> Instagram</a
+        >
+      </p>
+      <p class="inline-contact">
+        <a href="https://www.youtube.com/channel/UCQgy9iwf0rjdeTyNN28YaVw"
+          ><i class="fa-brands fa-youtube"></i> YouTube</a
+        >
+      </p>
+    </div>
+    <footer class="footer">
+      <p><small>&copy; 2023 Skyline Realty</small></p>
+    </footer>
+  </body>
+</html>

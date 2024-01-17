@@ -1,0 +1,445 @@
+html,
+body {
+  background-color: #f9f9f9;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Roboto", sans-serif, "Zen Maru Gothic", serif, "Times New Roman",
+    Georgia, Times, serif, "Cinzel Decorative", serif, "Quintessential", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+}
+
+.navbar {
+  font-family: "Zen Maru Gothic", serif;
+  background: transparent !important;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  padding: 0px auto;
+  margin: 0px;
+}
+
+.navbar-brand {
+  filter: invert(100%);
+  transition: 0.2s ease;
+  transform: scale(1);
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+  filter: brightness(150%) invert(100%);
+}
+
+.navbar-toggler {
+  border: 1px solid white !important;
+}
+
+.nav-link {
+  color: white !important;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+}
+
+.nav-link::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+header {
+  height: auto;
+  color: #faf0e6;
+  text-align: center;
+}
+
+.header-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+    url("../images/header-bg.jpg");
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-size: cover;
+  backdrop-filter: opacity(30%);
+}
+
+.header-container hr {
+  width: 30%;
+  border: 3px white solid;
+  opacity: 100%;
+  margin: auto;
+  align-items: center;
+}
+
+#logo-img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  filter: invert(98%) sepia(2%) saturate(7067%) hue-rotate(298deg)
+    brightness(112%) contrast(103%);
+}
+
+.header-container h1 {
+  font-family: "Cinzel Decorative", serif;
+  justify-content: center;
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.header-container h3 {
+  width: 40%;
+  font-size: 2rem;
+  font-style: oblique;
+  text-align: center;
+  margin: auto;
+  padding: 30px 0 10vh 0;
+}
+
+.header-container a {
+  color: navy;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px whitesmoke;
+  cursor: pointer;
+}
+
+.header-container a:hover {
+  color: darkblue;
+  transition: 0.5s ease-in-out;
+}
+
+/* BUYER PORTION */
+#buyer-title {
+  border: 2px solid lightblue;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#buyer-title h1 {
+  font-family: "Cinzel", sans-serif;
+  text-align: center;
+}
+
+#buyer-title p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#why-choose-us {
+  text-align: center;
+  font-family: "Zen Maru Gothic", serif;
+}
+
+#why-choose-us h2 {
+  padding: 10px;
+  margin: 10px auto 20px;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 40px;
+  background-color: lightcyan;
+  font-weight: 600;
+}
+
+#why-choose-us p {
+  margin: 0 3% 5%;
+}
+
+#why-choose-us img {
+  border-radius: 10px;
+}
+#first-choices h2,
+#second-choices h2,
+#first-choices h3,
+#second-choices h3 {
+  display: inline-block;
+}
+
+#first-choices hr,
+#second-choices hr {
+  border-top: 0px solid darkcyan !important;
+  padding: 0;
+  margin-top: 0.2em !important;
+  border-width: 6px !important;
+}
+
+#first-choices {
+  display: flex;
+  padding: 20px;
+  list-style-type: none;
+}
+
+#first-choices h3 {
+  text-align: justify;
+  margin: 0 30px;
+}
+
+#first-choices p {
+  text-align: justify;
+  padding-right: 50px;
+  font-size: 24px;
+}
+#second-choices {
+  display: flex;
+  padding: 10px;
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+#second-choices h3 {
+  text-align: justify;
+  margin: 0 30px;
+  padding-left: 50px;
+}
+
+#second-choices p {
+  text-align: justify;
+  padding: 0 50px;
+  font-size: 24px;
+}
+
+#the-buying-process h2 {
+  text-align: center;
+  font-family: "Cinzel Decorative", serif;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: lightcyan;
+  font-weight: 600;
+}
+
+#third-choices {
+  list-style-type: none;
+  display: flex;
+  font-family: "Zen Maru Gothic", serif;
+  padding: 10px;
+}
+
+#third-choices img {
+  border-radius: 10px;
+  margin-right: 20px;
+}
+#third-choices h3 {
+  margin-top: 10px;
+  display: inline-block;
+  margin: 0;
+}
+
+#third-choices hr {
+  border-top: 0px solid darkcyan !important;
+  padding: 0;
+  margin-top: 0.2em !important;
+  border-width: 6px !important;
+}
+
+#third-choices p {
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding: 0;
+  margin-top: 0;
+}
+
+/* GET STARTED */
+#get-started {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#get-started h2 {
+  background-color: lightcyan;
+  padding: 10px 0;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 600;
+}
+
+#get-started p {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+/* CONTACT */
+#contact {
+  text-align: center;
+}
+
+#contact h3 {
+  margin: auto;
+}
+
+.inline-contact {
+  display: inline-block;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+#contact a {
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  color: crimson;
+}
+
+#contact a:hover {
+  padding: 5px;
+  color: white;
+  background-color: crimson;
+  border: 2px solid crimson;
+  border-radius: 10px;
+}
+
+/*************************FOOTER*******************************/
+.footer {
+  text-align: center;
+}
+
+/*************************** DIFFERENT DEVICES STYLING **********************************/
+
+/* For Mobile Portrait View */
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  header {
+    height: auto;
+  }
+
+  #logo-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .header-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .header-container h3 {
+    width: 60%;
+    font-size: 1.5rem;
+  }
+
+  #buyer-title {
+    width: 80%;
+  }
+
+  #buyer-title p {
+    font-size: 20px;
+  }
+
+  #buyer-title h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .header-btn {
+    left: 20px;
+    bottom: 225px;
+  }
+
+  #why-choose-us h3 {
+    font-size: 1.3rem;
+  }
+
+  #why-choose-us p {
+    font-size: 18px;
+    margin: 1% 2%;
+  }
+
+  #first-choices,
+  #second-choices,
+  #third-choices {
+    text-align: center;
+  }
+
+  #first-choices {
+    display: block;
+  }
+
+  #first-choices p {
+    font-size: 18px;
+    padding: 1% 2%;
+  }
+
+  #first-choices img {
+    width: auto;
+    height: 450px;
+    display: none;
+  }
+
+  #first-choices h3 {
+    margin: auto;
+    font-size: 1.2rem;
+  }
+
+  #second-choices {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  #second-choices img {
+    width: auto;
+    height: auto;
+  }
+
+  #second-choices p {
+    font-size: 18px;
+    padding: 1% 2%;
+  }
+
+  #second-choices h3 {
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 0;
+  }
+
+  #third-choices {
+    display: block;
+  }
+
+  #third-choices img {
+    display: block;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+  }
+
+  #third-choices hr {
+    margin-top: 0.2em !important;
+    margin: auto;
+  }
+
+  #third-choices p {
+    text-align: justify;
+    width: 100%;
+    font-size: 18px;
+    padding: 1% 2%;
+  }
+
+  #third-choices h3 {
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+  }
+
+  #get-started h2 {
+    padding: 1rem 0.5rem;
+    font-size: 1.3rem;
+  }
+
+  #get-started p {
+    width: 90%;
+    font-size: 18px;
+  }
+}
