@@ -45,4 +45,4 @@ Skyline Realty
   });
 });
 
-module.exports = handler;
+module.exports = cron;
