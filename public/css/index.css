@@ -67,7 +67,7 @@ header {
 
 .header-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
-    url("../images/header-bg.jpg");
+    url("../images/header-bg.webp");
   width: 100%;
   height: auto;
   position: relative;
@@ -205,13 +205,13 @@ header {
 
 .seller:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url("../images/BuyerSeller.jpg");
+    url("../images/BuyerSeller.webp");
   background-size: cover;
 }
 
 .buyer:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url("../images/BuyerSeller.jpg");
+    url("../images/BuyerSeller.webp");
   background-size: cover;
 }
 .seller:hover .btn {

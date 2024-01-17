@@ -71,7 +71,7 @@ header {
 
 .header-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
-    url("../images/header-bg.jpg");
+    url("../images/header-bg.webp");
   width: 100%;
   height: auto;
   position: relative;
