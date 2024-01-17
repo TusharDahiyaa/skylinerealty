@@ -3,7 +3,7 @@ const UserModel = require("../model/user.model");
 const EmailTransporter = require("../notifier/emailService");
 require("dotenv").config();
 
-cron.schedule("*/5 * * * * *", async () => {
+cron.schedule("*/5 * * * *", async () => {
   //Get the tickets with UN_SENT status and send those mails for those tickets
   const notifications = await UserModel.find({
     sendStatus: "UN_SENT",
