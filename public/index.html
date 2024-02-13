@@ -225,7 +225,7 @@
       </p>
     </div>
     <footer class="footer">
-      <p><small>&copy; 2023 Skyline Realty</small></p>
+      <p><small class="copyright"></small></p>
     </footer>
     <script>
       document.querySelector(".buyer").addEventListener("click", function () {
@@ -235,7 +235,10 @@
       document.querySelector(".seller").addEventListener("click", function () {
         window.location.href = "/seller";
       });
+      document.querySelector(
+        ".copyright"
+      ).innerHTML = `&copy; ${new Date().getFullYear()} Skyline Realty`;
     </script>
-    <script src="../index.js" />
+    <script src="../index.js"></script>
   </body>
 </html>

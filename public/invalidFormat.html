@@ -131,9 +131,23 @@
       </div>
 
       <footer class="footer text-white">
-        <p><small>&copy; 2023 Skyline Realty</small></p>
+        <p><small class="copyright"></small></p>
       </footer>
     </div>
-    <script src="../index.js" />
+    <script src="../index.js"></script>
+    <script>
+      window.scroll(function () {
+        console.log(window.scrollTop());
+        if (window.scrollTop() > 63) {
+          document.getElementsByTagName("nav").addClass("navbar-fixedd");
+        }
+        if (window.scrollTop() < 64) {
+          document.getElementsByClassName("nav").removeClass("navbar-fixedd");
+        }
+      });
+      document.querySelector(
+        ".copyright"
+      ).innerHTML = `&copy; ${new Date().getFullYear()} Skyline Realty`;
+    </script>
   </body>
 </html>

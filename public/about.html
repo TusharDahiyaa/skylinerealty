@@ -47,17 +47,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script>
-      window.scroll(function () {
-        console.log(window.scrollTop());
-        if (window.scrollTop() > 63) {
-          document.getElementsByTagName("nav").addClass("navbar-fixedd");
-        }
-        if (window.scrollTop() < 64) {
-          document.getElementsByClassName("nav").removeClass("navbar-fixedd");
-        }
-      });
-    </script>
   </head>
   <body>
     <div class="header-bg">
@@ -260,7 +249,21 @@
       </p>
     </div>
     <footer class="footer">
-      <p><small>&copy; 2023 Skyline Realty</small></p>
+      <p><small class="copyright"></small></p>
     </footer>
+    <script>
+      window.scroll(function () {
+        console.log(window.scrollTop());
+        if (window.scrollTop() > 63) {
+          document.getElementsByTagName("nav").addClass("navbar-fixedd");
+        }
+        if (window.scrollTop() < 64) {
+          document.getElementsByClassName("nav").removeClass("navbar-fixedd");
+        }
+      });
+      document.querySelector(
+        ".copyright"
+      ).innerHTML = `&copy; ${new Date().getFullYear()} Skyline Realty`;
+    </script>
   </body>
 </html>

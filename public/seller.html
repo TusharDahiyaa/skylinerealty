@@ -305,7 +305,7 @@
       </p>
     </div>
     <footer class="footer">
-      <p><small>&copy; 2023 Skyline Realty</small></p>
+      <p><small class="copyright"></small></p>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -327,6 +327,9 @@
           document.getElementsByClassName("nav").removeClass("navbar-fixedd");
         }
       });
+      document.querySelector(
+        ".copyright"
+      ).innerHTML = `&copy; ${new Date().getFullYear()} Skyline Realty`;
     </script>
   </body>
 </html>
